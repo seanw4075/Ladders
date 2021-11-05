@@ -19,9 +19,9 @@ local Vehicles = {}
 RegisterServerEvent('Ladders:Server:Ladders:Local')
 AddEventHandler('Ladders:Server:Ladders:Local', function(Action)
     if Action == "add" then
-        TriggerClientEvent('Ladders:Client:Local:Add', -1, source)
+        TriggerClientEvent('Ladders:Client:Local:Add', source)
     else
-        TriggerClientEvent('Ladders:Client:Local:Remove', -1, source)
+        TriggerClientEvent('Ladders:Client:Local:Remove', source)
     end
 end)
 
